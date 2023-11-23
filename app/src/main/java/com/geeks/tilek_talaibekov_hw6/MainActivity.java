@@ -77,8 +77,12 @@ public class MainActivity extends AppCompatActivity {
                 etPassword.setVisibility(View.GONE);
                 btnNext.setVisibility(View.GONE);
                 Toast.makeText(this, "Вы успешно зарегистрировались", Toast.LENGTH_SHORT).show();
-            } else {
+            }
+            else {
                 Toast.makeText(MainActivity.this,"Неправильный логин и пароль", Toast.LENGTH_SHORT).show();
+            }
+            if(etMail.getText().toString().isEmpty() && etPassword.getText().toString().isEmpty()){
+                Toast.makeText(MainActivity.this, "Заполните поля", Toast.LENGTH_SHORT).show();
             }
         });
     }
