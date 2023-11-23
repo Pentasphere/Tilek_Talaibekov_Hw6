@@ -80,8 +80,6 @@ public class MainActivity extends AppCompatActivity {
             }
             else {
                 Toast.makeText(MainActivity.this,"Неправильный логин и пароль", Toast.LENGTH_SHORT).show();
-            }
-            if(etMail.getText().toString().isEmpty() && etPassword.getText().toString().isEmpty()){
                 Toast.makeText(MainActivity.this, "Заполните поля", Toast.LENGTH_SHORT).show();
             }
         });
